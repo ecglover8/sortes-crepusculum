@@ -1,0 +1,22 @@
+{
+  "name": "sortes-crepusculum",
+  "version": "1.0.0",
+  "description": "a twilight API and web app",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "twilight",
+    "api",
+    "sortes",
+    "bibliomancy"
+  ],
+  "author": "Gene Glover",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2"
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="public/styles.css" />
+    <meta name="description" content="An API for those who wish to practice sortes crepusculum.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sortes Crepusculum</title>
+  </head>
+  <body>
+    <section id="container">
+      <h1>sortes crepusculum</h1><span class="explain" onClick="Show()">(What is this?)</span>
+      <div id="expmodal" onClick="Hide()">
+        <p><em>Sortes crepusculum</em> is a Latin term that means Twilight Lots. In the olden days of ancient Rome, fortune telling and predicting the future was a very big part of life. A couple ways of accomplishing this were tossing dice or consulting an oracle. Another way was drawing lots.</em></p>
+        <p>Some of the lots that were drawn would be to determine who was "lucky" or "unlucky" enough to have something happen to him or her. Drawing the literal "short straw" for example. Jonah was <a href="http://biblehub.com/jonah/1-7.htm">tossed into the sea</a>, setting the stage for him to be swallowed by a huge fish, because he drew a bad lot.</p>
+        <p>Other lots contained verses from the works of famous writers, called bibliomancy. The verse you drew was then interpreted by a diviner to have some meaning that pertained to you. Sort of like a horoscope. In those days, the verses were from legendary works like <a href="https://en.wikipedia.org/wiki/Sortes_Homericae">Homer's Odyssey</a> or <a href="https://en.wikipedia.org/wiki/Sortes_Vergilianae">Virgil's Aeneid</a>.</p>
+        <p>In the 21st century, we have fewer great works of literature to choose from for our lots. There are no legendary tales of heroes, like Aeneas, being released today. Or are there?</p>
+        <p>We argue here that there is a modern work of equivalent reverence to the Aeneid. There is another story of a plucky hero who travels north from the place where they grew up to a new, foreign land; encounters many mythical creatures and has vivid, foretelling dreams; and ultimately leads a race of beings to new heights. Of course, this hero is none other than Bella Swan. From here, we invite you to use the book <em>Twilight</em> to accurately predict your future.</p>
+        <p>Lastly, we would be remiss if we didn't mention the <a href="http://aeneid.eu/api">Aeneid API</a>, which was the genesis of this idea. If you browse this site and find it to be very much a clone of that one, that is very much our intention. Thank you, and enjoy!</p>
+      </div>
+      <br />
+      <hr style="color:#F8EEF8" />
+      <br />
+      <h2>An API and web application for Twilight by Stephanie Meyers</h2>
+      <p class="para">Last updated: 2017-11-22. Chapters 1-13 are now online.</p>
+      <br />
+      <h2>Methods</h2>
+      <p class="para">All methods are GET requests.</p>
+      <p class="para">Methods return data via a web application (sortes) or in JSON format (all other methods).</p>
+      <p class="para">Click on a method to see an example.</p>
+      <br />
+      <a class="example" href="https://sortes-crepusculum-ecglover8.c9users.io/about">placeholderurl</a>
+      <p class="para">Return information about the book <em>Twilight</em> as JSON data.</p>
+      <br />
+      <a class="example" href="https://sortes-crepusculum-ecglover8.c9users.io/websortes">placeholderurl</a>
+      <p class="para">Practice sortes crepusculum via the web application.</p>
+      <br />
+      <a class="example" href="https://sortes-crepusculum-ecglover8.c9users.io/sortesjson">placeholderurl</a>
+      <p class="para">Practice sortes crepusculum in JSON format.</p>
+      <br />
+      <h2>Contact</h2>
+      <p class="para">Send all queries or suggestions for improvements to gigiweb@programmer.net</p>
+    </section>
+    <script type="text/javascript">
+      function Show() {
+        document.getElementById("expmodal").style.display = "block";
+      }
+      function Hide() {
+        document.getElementById("expmodal").style.display = "none";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@font-face {
+    font-family: "palatino";
+    src: url("palatino.ttf");
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: #000000;
+    background-image: url("twilightsky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1 {
+    color: #F8EEF8;
+    display: inline-block;
+    font-family: palatino, serif;
+    font-size: 2.2em;
+    padding-right: 10px;
+}
+h2 {
+    color: #F8EEF8;
+    font-family: palatino, serif;
+}
+#container {
+    margin: auto;
+    width: 86%;
+}
+#expmodal {
+    background-color: #000000;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+#expmodal p {
+    color: #FFFFFF;
+    padding: 15px 20px;
+    text-indent: 10px;
+}
+.example {
+    color: #F8EEF8;
+    display: inline-block;
+    font-family: monospace;
+    font-size: 1.5em;
+    font-style: oblique;
+    font-weight: 300;
+    padding: 5px 0px;
+    text-decoration: none;
+}
+.example:hover {
+    color: #0000FF;
+    text-decoration: underline;
+}
+.explain {
+    border-bottom: 1px dashed #F8EEF8;
+    color: #F8EEF8;
+    font-size: 0.7em;
+    text-decoration: none;
+    vertical-align: middle;
+}
+.explain:hover {
+    cursor: pointer;
+}
+.info {
+    color: #F8EEF8;
+    font-size: 1.5em;
+    font-style: oblique;
+    padding: 10px 25px;
+}
+.para {
+    /* fallback color */
+    background-color: #F8EEF8;
+    background-color: rgba(248, 239, 248, 0.6);
+    border-left: 4px solid #F8EEF8;
+    border-right: 4px solid #F8EEF8;
+    color: #000000;
+    font-family: helvetica, sans-serif;
+    padding: 5px 10px;
+}
+.text {
+    color: #F8EEF8;
+    display: block;
+    font-size: 3em;
+    padding: 40px;
+}
