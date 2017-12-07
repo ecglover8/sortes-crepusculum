@@ -32,10 +32,27 @@ app.get("/websortes", sortes, GetChapter, (req, res) => {
 app.get("/sortesjson", sortes, (req, res) => {
   res.json(req.line);
 });
+app.get("/line/:query", (req, res) => {
+  var linenum = parseInt(req.params.query, 10);
+  if (!isNaN(linenum)) {
+    if (linenum < 1 || linenum > 7085) {
+      console.log("Integer not within range. Please choose a number between 1 and 7085, inclusive.");
+      res.json("Integer not within range. Please choose a number between 1 and 7085, inclusive.");
+      return;
+    } else {
+      res.json(text[linenum-1]);
+      return;
+    }
+  } else {
+    console.log("You must enter a valid number. Please go back and try again.");
+    res.json("You must enter a valid number. Please go back and try again.");
+    return;
+  }
+});
 //get a random line from the book
 function sortes(req, res, next) {
   // total number of lines in Twilight
-  var totallines = 4299;
+  var totallines = 7085;
   var i = Math.floor(totallines * Math.random());
   req.line = text[i];
   return next();
@@ -124,7 +141,7 @@ function GetChapter(req, res, next) {
   }
   return next();
 }
-//always use port 8080 on c9.io
+//open port to listen for requests
 app.listen(port, () => {
   console.log("Sortes crepusculum is live on port #" + port + ".");
 });
