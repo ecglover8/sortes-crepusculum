@@ -35,9 +35,9 @@ app.get("/sortesjson", sortes, (req, res) => {
 app.get("/line/:query", (req, res) => {
   var linenum = parseInt(req.params.query, 10);
   if (!isNaN(linenum)) {
-    if (linenum < 1 || linenum > 8710) {
-      console.log("Integer not within range. Please choose a number between 1 and 8710, inclusive.");
-      res.json("Integer not within range. Please choose a number between 1 and 8710, inclusive.");
+    if (linenum < 1 || linenum > 8712) {
+      console.log("Integer not within range. Please choose a number between 1 and 8712, inclusive.");
+      res.json("Integer not within range. Please choose a number between 1 and 8712, inclusive.");
       return;
     } else {
       res.json(text[linenum-1]);
@@ -52,7 +52,7 @@ app.get("/line/:query", (req, res) => {
 //get a random line from the book
 function sortes(req, res, next) {
   // total number of lines in Twilight
-  var totallines = 8710;
+  var totallines = 8712;
   var i = Math.floor(totallines * Math.random());
   req.line = text[i];
   return next();
