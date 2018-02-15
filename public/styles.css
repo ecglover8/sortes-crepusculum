@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "palatino";
-    src: url("palatino.ttf");
+    font-family: palatino;
+    src: url(palatino.ttf);
 }
 * {
     box-sizing: border-box;
